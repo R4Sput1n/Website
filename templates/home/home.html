@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+</head>
+<body>
+	{% block backgroud %}
+	{% endblock %}
+	<div class="home">
+		This is a website about ...
+	</div>
+	<a href="#">
+		<div class="selection1">
+			Change
+		</div>
+	</a>
+	<a href="#">
+		<div class="selection2">
+			Learning
+		</div>
+	</a>
+
+</body>
+</html>
