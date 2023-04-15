@@ -1,27 +1,40 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Title</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
+	<title>Website</title>
+	<link rel="stylesheet" type="text/css" href="{% static "home/home.css" %}">
+	<script src="{% static "home/jquery-3.6.4.min.js" %}"></script>
+	
 </head>
+
 <body>
-	{% block backgroud %}
-	{% endblock %}
 	<div class="home">
 		This is a website about ...
 	</div>
 	<a href="#">
-		<div class="selection1">
+		<div class="selection1 sound">
+			<audio id="audio" preload="auto">
+				<source src="{% static "home/water_drop.mp3" %}"/>
+				<source src="{% static "home/water_drop.ogg" %}"/>
+				Your browser does not support the audio element.
+			</audio>
 			Change
 		</div>
 	</a>
 	<a href="#">
-		<div class="selection2">
+		<div class="selection2 sound">
+			<audio id="audio" preload="auto">
+				<source src="{% static "home/water_drop.mp3" %}"/>
+				<source src="{% static "home/water_drop.ogg" %}"/>
+				Your browser does not support the audio element.
+			</audio>
 			Learning
 		</div>
 	</a>
-
+<script src="{% static "home/audio.js" %}"></script>
 </body>
+
 </html>
